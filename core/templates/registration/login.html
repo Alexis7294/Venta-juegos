@@ -1,0 +1,15 @@
+
+<h2>Autenticación</h2>
+
+{% load crispy_forms_tags %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <table>
+        {{ form | crispy }}
+    </table>
+
+    <input type="reset" value="Limpiar">
+    <input type="submit" value="Login">
+
+</form>

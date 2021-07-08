@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+{% endblock %}
+
+{% block javascript %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+{% endblock %}
+
+{% block contenido %}
+
+<div class="contenedor_galeria">
+    <div>
+        
+        <div class="galeria">
+            <div class="container">
+      
+
+                    <a data-fancybox="gallery" href="{% static 'core/'%}img/nier_replicant_accion.jpg">
+                        <img src="{% static 'core/'%}img/nier_replicant_accion.jpg" width="230px" height="255px" alt="juego 1">
+                    </a>
+
+                    <a data-fancybox="gallery" href="{% static 'core/'%}img/forza_horizon_4_conduccion.jpg">
+                        <img src="{% static 'core/'%}img/forza_horizon_4_conduccion.jpg" width="230px" height="255px" alt="juego 2">
+                    </a>
+
+                    <a data-fancybox="gallery" href="{% static 'core/'%}img/celeste.jpg">
+                        <img src="{% static 'core/'%}img/celeste.jpg" width="230px" height="255px" alt="juego 3">
+                    </a>
+
+                    <a data-fancybox="gallery" href="{% static 'core/'%}img/guilty_gear_strive_pelea.jpg">
+                        <img src="{% static 'core/'%}img/guilty_gear_strive_pelea.jpg" width="230px" height="255px" alt="juego 4">
+                    </a>
+            </div>   
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

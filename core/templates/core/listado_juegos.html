@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+
+
+{% block contenido %}
+
+    
+    
+        <h2>Listado de Juegos</h2>
+        <table class="table table-striped" id="lj">
+            <br></br>
+        
+                <tr>
+                    <th>Nombre</th>
+                    <th>Codigo</th>
+                    <th>Valor</th>
+                    <th>Año</th>
+                    <th>Género</th>
+                </tr>
+    
+                {% for j in juegos %}
+                    <tr>
+                        <td>{{j.nombre}}</td>
+                        <td>{{j.codigo}}</td>
+                        <td>{{j.valor}}</td>
+                        <td>{{j.anio}}</td>
+                        <td>{{j.genero}}</td>
+                        {% if user.is_authenticated %}
+                            {% if perms.core.change_juego %}
+                                <td> <a href = "{% url 'modificar_juego' j.id %}" >Modificar</a></td>
+                                {% endif %}
+                            {% if perms.core.delete_juego %}    
+                                <td> <a href = "{% url 'eliminar_juego' j.id %}" >Eliminar</a></td>
+                                {% endif %}
+
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+        </table>
+    
+    
+
+{% endblock %}

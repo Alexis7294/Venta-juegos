@@ -1,0 +1,60 @@
+body{
+    background-image: url(img/fondito_azul.jpg);
+}
+/* navbar */
+.justify-content-end{
+    padding-right: 50px;
+    background-color: #212121;
+    margin: 0px 100px 0px 100px;
+    border-radius: 2px;
+}
+.justify-content-end a{
+    color: whitesmoke;
+}
+.justify-content-end a:hover{
+    background-color: #52616b;
+    border-radius: 2px;
+}
+#carouselExampleIndicators{
+    margin: 0px 130px 0px 130px;
+    height: 550px;
+    
+}
+#cform{
+    color: aliceblue;
+}
+.listado_juegos{
+    color: azure;
+    font-family: -apple-sstem, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.listado_juegos table{
+    width: 50%;
+    margin:auto;
+}
+.listado_juegos h2{
+    text-align: center;
+    margin:auto;
+}
+
+.nuevo_juego table{
+    align-content: center;
+    color: azure;
+    font-family: -apple-sstem, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin:auto;
+}
+.nuevo_juego form{
+    align-content: center;
+    color: azure;
+    font-family: -apple-sstem, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 50%;
+    text-align: center;
+    margin:auto;
+}
+.container h2{
+    color: azure;
+}
+
+#lj{
+    color: aliceblue;
+}
